@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <title>Sistema de gestion de viajes</title>
+  </head>
+  <body>
+
+    <!--<div class="debug-message">
+        <h2>Generadora de Chistes</h2>
+    </div>-->
+
+    <header>
+      <h2>SISTEMA DE GESTION DE VIAJES</h2>
+    </header>
+
+    <div class="container_dashboard">
+      <span id="viajes">Viajes: <span id="viajes_no">{{no_viajes}}</span></span>
+      <span id="ganancias">Ganancias: <span id="ganancias_dinero">RD$: {{ganancias}}</span></span>
+    </div>
+
+    <div class="container">
+      <ul>
+        {% for viajes in no_viajes_lista %}
+            <li>
+              ID: {{viajes.id}} | 
+              <span id="transformarTexto">CODUCTOR: </span>{{viajes.nombre_conductor}} | 
+              <span id="transformarTexto">PRECIO DEL VIAJE:</span> <span id="ganancias_dinero">RD$: {{viajes.precio_viaje}}</span> | 
+              <span id="transformarTexto">FECHA: </span>{{viajes.fecha_viaje}}
+              <a href="detalle_viaje/{{viajes.id}}">Ver detalles</a>
+              <a href="editar_viaje/{{viajes.id}}">Editar</a>
+              <a href="eliminar_viaje/{{viajes.id}}">Eliminar</a>
+              
+            </li>
+        {% endfor %}
+      </ul>
+      <!--<button id="random-joke-button">Generar chiste</button>-->
+    </div>
+    
+    <div class="container_boton">
+      <button id="random-joke-button" onclick="window.location.href='{% url 'agregar' %}'" >Agregar</button>
+      <button id="random-joke-button" onclick="confirmarEliminacion()" >Eliminar todo</button>
+    </div>
+    
+    <script>
+      function confirmarEliminacion() {
+          if (confirm("¿Estás seguro que deseas eliminar todos los viajes?")) {
+              window.location.href = "{% url 'eliminar_todos' %}";
+          }
+      }
+    </script>
+
+    
+    
+    
+    
+    
+
+
+
+
+  </body>
+</html>

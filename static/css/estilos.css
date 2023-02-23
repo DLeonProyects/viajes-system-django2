@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: aliceblue;
+  background-size: cover;
+}
+
+header {
+  max-width: 100%;
+  background-color: #3223f4;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+header h2 {
+  font-weight: 200;
+}
+
+.convertirLetra {
+  font-weight: 500;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 9px;
+  overflow: auto;
+  height: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.container_dashboard {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+  overflow: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container_agregar {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+  overflow: auto;
+  height: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#viajes {
+  float: left;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+#viajes_no {
+  font-weight: 400;
+}
+
+#ganancias {
+  font-family: "Roboto", sans-serif;
+  float: Right;
+  font-weight: 300;
+}
+
+#ganancias_dinero {
+  color: rgb(56, 168, 0);
+  font-weight: 500;
+}
+
+#transformarTexto {
+  font-weight: 300;
+}
+
+.container a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  padding: 7px 40px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.container a:hover {
+  color: #fff;
+  background-color: black;
+}
+
+.container_boton {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 13px;
+  overflow: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container_boton_agregar {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 13px;
+  overflow: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 14.2px;
+  padding: 15px 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+
+#random-joke-button {
+  cursor: pointer;
+  margin-top: 1px;
+  background-color: white;
+  padding: 10px 30px;
+  color: black; 
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 500ms;
+}
+
+#random-joke-button:hover {
+  color: #fff;
+  background-color: #3223f4;
+}
+
+
+
+@keyframes debug-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}

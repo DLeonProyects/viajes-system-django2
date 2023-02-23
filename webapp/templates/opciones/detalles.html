@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+    <title>Detalles</title>
+  </head>
+  <body>
+    <!--<div class="debug-message">
+        <h2>Generadora de Chistes</h2>
+    </div>-->
+
+    <header>
+      <h2>Detalles</h2>
+    </header>
+
+    <div class="container">
+      <ul>
+        <li>
+          ID: {{viajes.id}} |
+          <span id="transformarTexto">CODUCTOR: </span>{{viajes.nombre_conductor}} |
+          <span id="transformarTexto">PRECIO DEL VIAJE:</span><span id="ganancias_dinero">RD$: {{viajes.precio_viaje}}</span> |
+          <span id="transformarTexto">FECHA: </span>{{viajes.fecha_viaje}}
+        </li>
+      </ul>
+      <!--<button id="random-joke-button">Generar chiste</button>-->
+    </div>
+
+    <div class="container_boton"> 
+      <button id="random-joke-button" onclick="window.location.href='{% url 'index' %}'" >Atras</button>
+    </div>
+  </body>
+</html>

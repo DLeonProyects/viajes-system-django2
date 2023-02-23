@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+    <title>Editar viaje</title>
+  </head>
+  <body>
+    <!--<div class="debug-message">
+        <h2>Generadora de Chistes</h2>
+    </div>-->
+
+    <header>
+      <h2>Editar viaje</h2>
+    </header>
+
+    <div class="container_agregar">
+        <form action="" method="POST">
+        <div class="form-group">
+            <label for="{{FormViaje.nombre_conductor_for_label}}">NOMBRE:</label>
+            {{FormViaje.nombre_conductor}}
+        </div>
+        <div class="form-group">
+            <label for="{{FormViaje.precio_viaje_for_label}}">PRECIO DEL VIAJE:</label>
+            {{FormViaje.precio_viaje}}
+        </div>
+        <div class="form-group">
+            <label for="{{FormViaje.fecha_viaje_for_label}}">FECHA DEL VIAJE:</label>
+            {{FormViaje.fecha_viaje}} 
+        </div>
+        <button type="submit" id="random-joke-button">Guardar</button>
+        {% csrf_token %}
+        </form>
+      <!--<button id="random-joke-button">Generar chiste</button>-->
+    </div>
+
+    <div class="container_boton_agregar">
+      <button id="random-joke-button" onclick="window.location.href='{% url 'index' %}'" >Atras</button>
+    </div>
+  </body>
+</html>
